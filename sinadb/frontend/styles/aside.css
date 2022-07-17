@@ -1,0 +1,46 @@
+aside {
+    grid-area: aside;
+    background-color: #181A1B;
+    position: relative;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: #181A1B;
+    padding: 10px;
+}
+
+.search-box form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box form button {
+    width: 35px;
+    height: 30px;
+    border-radius: 0px;
+    box-sizing: border-box;
+}
+
+.search-box form input {
+    width: calc(100% - 35px);
+    height: 28px;
+    border-radius: 0px;
+    border: white;
+    box-sizing: border-box;
+}
+
+#context-menu {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 40px);
+    background-color: #181A1B;
+    gap: 5px;
+    padding: 10px;
+}

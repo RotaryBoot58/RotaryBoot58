@@ -1,0 +1,279 @@
+main {
+    grid-area: main;
+    overflow-y: auto;
+    position: relative;
+}
+
+.overlay-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.overlay-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 80%;
+    width: 65%;
+    z-index: 1;
+}
+
+.search-image-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #181818;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-metadata-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #181818;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-db-overlay {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    height: 100%;
+    width: 100%;
+    background-color: #181818;
+    justify-content: center;
+    align-items: center;
+}
+
+#cards { 
+    display: grid;
+    grid-template: 260px/ 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    gap: 25px;
+    padding: 25px;
+}
+
+.card {
+    height: 260px;
+    width: 240px;
+    user-select: none;
+    cursor: pointer;
+    animation: crescePirokao 0.5s ease forwards;
+}
+
+@keyframes crescePirokao {
+    0% {
+      transform: scale(0)
+    }
+  
+    100% {
+      transform: scale(1)
+    }
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+}
+
+.card-title {
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 240px;
+    color: #fff;
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 10%;
+    opacity: 0;
+}
+
+.card:hover .card-title {
+    background-color: #181818; 
+    bottom: 0px;
+    opacity: 1;
+}
+
+.upload-db-type {
+    display: flex;
+    gap: 10px;
+    padding: 6px;
+}
+
+.db-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272A34;
+    height: 35px;
+    border-radius: 6px;
+    transition: all 0.2s;
+    padding: 6px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.db-type:hover {
+    background-color: rgb(22, 145, 43);
+}
+
+.anime-box {
+    display: grid;
+    /* grid-template-columns: 49.5% 49.5%; */
+    grid-template-columns: 100%;
+    /* grid-template-rows: 50% 50%; */
+    grid-column-gap: 1%;
+    height: calc(90% - 35px - 10%);
+    /* grid-column-gap: 0.4rem; */
+    /* grid-template-rows: 100%; */
+    /* grid-template-areas: "general-info select-tag-box" "submit-box submit-box"; */
+}
+
+#animeUpload {
+    display: grid;
+    grid-template-columns: 49.5% 49.5%;
+    grid-column-gap: 1%;
+    height: calc(90% - 35px - 10%);
+}
+
+.anime-box input {
+    height: 25px;
+    border-radius: 0px;
+    border: white;
+    box-sizing: border-box;
+}
+
+.general-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.general-info fieldset {
+    padding: 6px;
+}
+
+.anime-thumbnail {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.4rem;
+}
+
+.anime-episodes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anime-episodes fieldset {
+    width: 100%;
+}
+
+.anime-thumbnail fieldset {
+    width: 100%;
+}
+
+#anime-thumbnail-input, #anime-episodes-input {
+    display: none;
+}
+
+.files {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0.4rem;
+    /* display: flex;
+    align-items: center; */
+}
+
+.files fieldset{
+    padding: 6px;
+}
+
+.input-file {
+    padding: 6px;
+    border-radius: 6px;
+    background-color: #272A34;
+}
+
+.input-file:hover {
+    background-color: rgb(22, 145, 43);
+    transition:  all 0.2s;
+}
+
+.input-file label {
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.anime-date-and-duration {
+    display: flex;
+}
+
+.select-tag-box fieldset {
+    padding: 6px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 2px;
+}
+
+.anime-tag {
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    background-color: #272A34;
+    height: 35px;
+    border-radius: 6px;
+    transition: all 0.2s;
+    user-select: none;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: rgb(22, 145, 43);
+}
+
+.anime-tag:hover {
+    background-color: rgb(22, 145, 43);
+}
+
+.submit-box {
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.submit-button {
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    background-color: #272A34;
+    height: 35px;
+    border-radius: 6px;
+    transition: all 0.2s;
+    user-select: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: rgb(22, 145, 43);
+}

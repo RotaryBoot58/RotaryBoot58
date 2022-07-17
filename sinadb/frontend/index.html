@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Sinadb</title>
+    <link rel="stylesheet" href="../frontend/styles/style.css">
+    <link rel="stylesheet" href="../frontend/styles/normalize.css">
+    <link rel="stylesheet" href="../frontend/styles/aside.css">
+    <link rel="stylesheet" href="../frontend/styles/footer.css">
+    <link rel="stylesheet" href="../frontend/styles/header.css">
+    <link rel="stylesheet" href="../frontend/styles/main.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+
+    <header>
+      <div class="start">
+        <img id="start-menu" src="images/menu-white.svg">
+        <span id="start">Sinadb</span>
+      </div>
+
+      <div class="maintenance">
+        <p class="options">Search Image</p>
+        <p class="options">Edit Metadata</p>
+        <p class="options">Upload DB</p>
+      </div>
+
+    </header>
+
+    <main>
+
+      <div class="overlay-container">
+
+        <div class="overlay-box hideY" data-boxname="search-image">
+          <div class="search-image-overlay">
+
+          </div>
+        </div>
+
+        <div class="overlay-box hideY" data-boxname="edit-metadata">
+          <div class="edit-metadata-overlay">
+
+          </div>
+        </div>
+
+        <div class="overlay-box" data-boxname="upload-db">
+          <div class="upload-db-overlay">
+
+            <div class="db-type-selector">
+              <fieldset>
+                <legend>Select DB type</legend>
+                <div class="upload-db-type">
+                  <div class="db-type">Anime</div>
+                  <div class="db-type">Audio</div>
+                  <div class="db-type">Movie</div>
+                  <div class="db-type">Photo</div>
+                  <div class="db-type">Image</div>
+                  <div class="db-type">Artwork</div>
+                  <div class="db-type">Video</div>
+                  <div class="db-type">Document</div>
+                  <div class="db-type">Gif</div>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="overlay-content-box anime-box showX" data-type="anime">
+              <form id="animeUpload" method="post">
+                <div class="general-info">
+                  <fieldset>
+                    <legend>General info</legend>
+  
+                    <div class="input-group">
+                      <input type="text" id="anime-name" name="anime-name" placeholder="Name">
+                    </div>
+  
+                    <div class="input-group">
+                      <input type="text" id="alt-anime-name" name="alt-anime-name" placeholder="Alternative Name">
+                    </div>
+                  </fieldset>
+  
+                  <div class="files">
+  
+                    <div class="anime-thumbnail">
+                      <fieldset>
+                        <legend>Thumbnail</legend>
+                        <div class="input-file">
+                          <input type="file" id="anime-thumbnail-input" name="anime-thumbnail-input">
+                          <label for="anime-thumbnail-input">Choose a file</label>
+                        </div>
+                      </fieldset>
+                    </div>
+    
+                    <div class="anime-episodes">
+                      <fieldset>
+                        <legend>Episodes</legend>
+                        <div class="input-file">
+                          <input type="file" id="anime-episodes-input" name="anime-episodes-input">
+                          <label for="anime-episodes-input">Choose files</label>
+                        </div>
+                      </fieldset>
+                    </div>
+  
+                    <div class="anime-date">
+                        <fieldset>
+                          <legend>Date</legend>
+                          <input type="date" id="anime-date-input" name="anime-date-input">
+                        </fieldset>
+                      </div>
+      
+                      <div class="anime-duration">
+                        <fieldset>
+                          <legend>Duration</legend>
+                          <input type="number" name="anime-duration-input" id="anime-duration-input">
+                        </fieldset>
+                      </div>
+                  </div>
+  
+                </div>
+
+                <div class="tags-box">
+                  <div class="select-tag-box">
+                    <fieldset>
+                      <legend>Select tags</legend>
+                      <div class="anime-tag select" anime-tag-data="action">Action</div>
+                      <div class="anime-tag select" anime-tag-data="comedy">Comedy</div>
+                      <div class="anime-tag select" anime-tag-data="horror">Horror</div>
+                      <div class="anime-tag select" anime-tag-data="sports">Sports</div>
+                      <div class="anime-tag select" anime-tag-data="adventure">Adventure</div>
+                      <div class="anime-tag select" anime-tag-data="drama">Drama</div>
+                      <div class="anime-tag select" anime-tag-data="mystery">Mystery</div>
+                      <div class="anime-tag select" anime-tag-data="supernatural">Supernatural</div>
+                      <div class="anime-tag select" anime-tag-data="fantasy">Fantasy</div>
+                      <div class="anime-tag select" anime-tag-data="romance">Romance</div>
+                      <div class="anime-tag select" anime-tag-data="suspense">Suspense</div>
+                      <div class="anime-tag select" anime-tag-data="sci-fi">Sci-fi</div>
+                      <div class="anime-tag select" anime-tag-data="sliceoflife">Slice of Life</div>
+                      <div class="anime-tag select" anime-tag-data="ecchi">Ecchi</div>
+                      <div class="anime-tag select" anime-tag-data="harem">Harem</div>
+                      <div class="anime-tag select" anime-tag-data="school">School</div>
+                      <div class="anime-tag select" anime-tag-data="isekai">Isekai</div>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="overlay-content-box audio-box hideX" data-type="audio">
+            </div>
+
+            <div class="overlay-content-box movie-box hideX" data-type="movie">
+            </div>
+
+            <div class="overlay-content-box photo-box hideX" data-type="photo">
+            </div>
+
+            <div class="overlay-content-box image-box hideX" data-type="image">
+            </div>
+
+            <div class="overlay-content-box artwork-box hideX" data-type="artwork">
+            </div>
+
+            <div class="overlay-content-box video-box hideX" data-type="video">
+            </div>
+
+            <div class="overlay-content-box document-box hideX" data-type="document">
+            </div>
+            
+            <div class="overlay-content-box gif-box hideX" data-type="gif">
+            </div>
+            <div class="submit-box">
+              <div class="submit-button" id="submitForm">
+                Upload
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="cards">
+
+        <!-- <div class="card">
+            <div class="card-title">
+              <p></p>
+            </div>
+            <img class="card-image" src="">
+        </div> -->
+
+      </div>
+      
+    </main>
+
+    <aside>
+
+      <div class="search-box">
+        <form action="">
+          <input type="text">
+          <button class="button">
+            <img src="images/search.svg">
+          </button>
+        </form>
+      </div>
+
+      <div id="context-menu" class="show">
+        <p class="tags">Animes</p>
+        <p class="tags">Audios</p>
+        <p class="tags">Movies</p>
+        <p class="tags">Photos</p>
+        <p class="tags">Images</p>
+        <p class="tags">Artwork</p>
+        <p class="tags">Videos</p>
+        <p class="tags">Documents</p>
+        <p class="tags">Photos</p>
+        <p class="tags">Gifs</p>
+      </div>
+
+    </aside>
+    
+    <footer>
+
+      <div id="pages">
+        1 2
+      </div>
+
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="const.js"></script>
+  <script src="script.js"></script>
+  <!-- <script>
+    (function (document, window, index)
+        {
+            let inputs = document.querySelectorAll( '.anime-thumbnail-input' );
+            Array.prototype.forEach.call( inputs, function( input )
+            {
+                let label	 = input.nextElementSibling,
+                    labelVal = label.innerHTML;
+
+                input.addEventListener( 'change', function( e )
+                {
+                    let fileName = '';
+                    if( this.files && this.files.length > 1 )
+                        fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+                    else
+                        fileName = e.target.value.split( '\\' ).pop();
+
+                    if( fileName )
+                        label.querySelector( 'span' ).innerHTML = fileName;
+                    else
+                        label.innerHTML = labelVal;
+                });
+
+                // Firefox bug fix
+                input.addEventListener( 'focus', function(){ input.classList.add( 'has-focus' ); });
+                input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
+            });
+        }( document, window, 0 ));
+  </script> -->
+</html>

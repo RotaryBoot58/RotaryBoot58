@@ -1,0 +1,16 @@
+footer {
+    height: 50px;
+    width: 100vw;
+    background-color: #181A1B;
+    grid-area: footer;
+    padding-left: 240px;
+    display: flex;
+}
+
+#pages {
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
