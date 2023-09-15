@@ -61,10 +61,6 @@ I'm a Fullstack developer that enjoy creating my own tools since I like to mess 
 </div>
 
 ## Contact:
-
-<div dir="auto">
- 
-</div>
 [![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:petersoncraft20@gmail.com)
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/petersontri/)
