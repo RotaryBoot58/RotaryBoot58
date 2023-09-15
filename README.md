@@ -5,6 +5,6 @@
 
 Want to talk with me? here, choose where to contact me!
  - Discord: https://discordapp.com/users/304823529684336640/
- - WhatsApp: https://wa.me/51996658112
+ - WhatsApp: https://wa.me/5551996658112
  - Email: petersoncraft20@gmail.com
 
