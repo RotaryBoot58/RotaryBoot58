@@ -3,7 +3,7 @@
 I'm a Fullstack developer that enjoy creating my own tools since I like to mess things with some lines of code.
 
 ### Skills:
-//Frontend
+    //Frontend
     -HTML
     -CSS
     -SASS
@@ -11,7 +11,7 @@ I'm a Fullstack developer that enjoy creating my own tools since I like to mess 
     -React
     -Svelte
 
-//Backend
+    //Backend
     -PHP
     -Laravel
     -MySQL
