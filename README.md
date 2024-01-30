@@ -1,6 +1,6 @@
 ### Ahoy! I'm RotaryBoot58 or just Rotary in short ways
 
-I'm a Fullstack developer that enjoy creating my own tools since I like to mess things with some lines of code.
+I'm a web developer that enjoy creating my own tools since I like to mess things with some lines of code.
 
 ### Skills:
     //Frontend
