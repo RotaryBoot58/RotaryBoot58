@@ -22,6 +22,7 @@ I'm a web developer that enjoy creating my own tools since I like to mess things
 ### Tools
     -Git
     -NPM
+    -PNPM
     -Artisan
     -Composer
 
