@@ -1,36 +1,11 @@
-### Ahoy! I'm RotaryBoot58 or just Rotary in short ways
+### Attention.
 
-I'm a web developer that enjoy creating my own tools since I like to mess things with some lines of code.
+I do not use Github to host my personal projects. if you want to know more about my work and who I am, visit my portfolio or codeberg profile.
+Codeberg: https://codeberg.org/RotaryBoot58
+Portfolio: https://rotaryboot58.codeberg.page/
 
-### Skills:
-    //Frontend
-    -HTML
-    -CSS
-    -SASS
-    -JavaScript
-    -React
-    -Svelte
+### Atenção.
 
-    //Backend
-    -PHP
-    -Laravel
-    -MySQL
-    -MariaDB
-    -PostgreSQL
-    -SQLite
-    
-### Tools
-    -Git
-    -NPM
-    -PNPM
-    -Artisan
-    -Composer
-
-## Contact:
-[![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:petersoncraft20@gmail.com)
-
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/petersontri/)
-
-[![discord](https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discordapp.com/users/304823529684336640/)
-
-[![whatsapp](https://img.shields.io/badge/whatsapp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5551996658112)
+Eu não uso o GitHub para hospedar meus projetos pessoais. caso queira conhecer meu projetos e saber quem eu sou, visite meu portfolio ou meu perfil no Codeberg.
+Codeberg: https://codeberg.org/RotaryBoot58
+Portfolio: https://rotaryboot58.codeberg.page/
